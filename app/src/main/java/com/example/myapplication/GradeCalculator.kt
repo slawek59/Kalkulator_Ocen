@@ -12,7 +12,10 @@ class GradeCalculator {
             in 71..80 -> "4.0"
             in 81..90 -> "4.5"
             in 91..100 -> "5.0"
-            else -> "Nieprawidłowy wynik"
+            else -> "Nieznana"
         }
     }
+
+    fun isValidScore(pointsAmount: Int?) = pointsAmount != null && pointsAmount in 0..100
+
 }
